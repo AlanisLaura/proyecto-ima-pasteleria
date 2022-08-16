@@ -66,13 +66,18 @@ h3{
     height: 5vh;
     width: 20vh;
     grid-area: buscador;
+    transform: translateX(50%);
+}
 
+.buscador:focus{
+    border: 3px;
 }
 .carrito { 
     
     height: 50%;
     width: 30%;
     grid-area: carrito;
+    transform: translateX(20px);
 }
 
 .headerPagina__nav{
@@ -95,6 +100,10 @@ h3{
     font-size: small;
 }
 
+.headerPagina__ul li:hover{
+    font-weight: 800;
+    background-color: lightgray;
+}
 /* Formato lista de productos */
 
 
@@ -129,6 +138,11 @@ button{
     background-color: #fac5e7;
     border: white;
     font-weight: 600;
+}
+
+button:hover{
+    background-color: gray;
+    color: white;
 }
 
 /* Formato footers */
