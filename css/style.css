@@ -1,19 +1,19 @@
 /* Formato general*/
 
-/* * {
+* {
     Margin:0;
     padding:0; 
     box-sizing: border-box;
-}*/
+}
 
 html { 
     font-family: 'Raleway';
 }
 
-/* ul,
+ul,
 ol {
     list-style: none;
-}*/
+}
 
 a{ 
     text-decoration: none;
@@ -31,6 +31,10 @@ h3{
     font-weight: bold;
 }
 
+    h4{
+        font-size: small;
+    }
+
 
 /* Formato headers */
 
@@ -39,75 +43,29 @@ h3{
     background-color: rgba(255, 182, 193, 0.59);
 
 }
-    /* width: 100%;
-    height: 30vh;
+    /* 
     position: sticky;
     top: 5px; */
-/* 
-    display: grid;
-    grid-template-columns: repeat(2,30%) repeat(2,20%);
-    grid-template-rows: 50% 50%;
-    grid-template-areas:
-    "logo logo buscador carrito"
-    "nav nav nav nav"
-    ;
-
-    justify-items: center;
-    align-items: center;
-    
-}*/
 
 .logo { 
     
-    height: 100%;
-    width: 70%;
-    /* grid-area: logo; */
+    height: 7rem;
+    width: 7rem;
+    border-radius: 10%;
     
 }
-/*
-.buscador{
-    height: 5vh;
-    width: 20vh;
-    grid-area: buscador;
-    transform: translateX(50%);
-}
 
+/*
 .buscador:focus{
     border: 3px;
 }
-
+*/
 .carrito { 
     
-    height: 50%;
-    width: 30%;
-    grid-area: carrito;
-    transform: translateX(20px);
+    height: 7%;
+    width: 7%;
 }
 
-.headerPagina__nav{
-    grid-area: nav;
-    width: 90%;
-}
-.headerPagina nav ul{
-
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-}
-.headerPagina nav ul li{ 
-    padding: 1%;
-    font-size: small;
-}
-
-.headerPagina__ul li:hover{
-    font-weight: 800;
-    background-color: lightgray;
-} */
 /* Formato lista de productos */
 
 
@@ -115,36 +73,19 @@ h3{
     border: #cac5c5e0 solid 1px;
     height: 50vh;
     width: 45vh;
-    padding: 5px;
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; */
+    padding: 3px;
 }
-/*
-.productsFlex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 15px;
-
-    padding: 5px;
-}*/
 
 .product img{
     height: 60%;
     width: 80%;
 }
 
-
 button{
-
-    padding: 4px;
+    padding: 1px;
     background-color: #fac5e7;
     border: white;
-    font-size: medium;
+    font-size: small;
     border-radius: 70px;
 }
 
@@ -155,20 +96,13 @@ button:hover{
 
 /* Formato footers */
 
-/* footer{
+/* .footer{
 
-    background-color: lightgray;
-    padding: 1%;
+    margin-left: 15px;
+    margin-right: 15px
 
-
-    display: grid;
-    grid-template-columns: 30% 39% 30%;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-    "contacto ubicacion linksUtiles"
-    ;
-}
-
+} */
+/*
 .navContacto {
 
     display: flex;
@@ -256,6 +190,7 @@ button:hover{
 }  */
 
 /* Media queries */
+
 /* 
 @media (min-width:426px) and (max-width:1024px){
     
@@ -282,4 +217,5 @@ button:hover{
         height: 100%;
         width: 40%;
     }
-} */
+} */ 
+p{padding-top: 0%;} 
