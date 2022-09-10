@@ -25,7 +25,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" >
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <a class="navbar-brand" href="#">
                     
                         <!-- search bar -->
@@ -71,22 +71,35 @@
 
 
     <section>
-        <h2 class="py-2">Productos destacados</h2>
+        <h2 class="text-center py-2">Productos destacados</h2>
     
-        <table>
-            <tr>
-                <td><img src="../images/chocotorta.PNG" alt="chocotorta">Chocotorta <button>Agregar al carrito</button></td>
-                <td><img src="../images/alfajorcitos.PNG" alt="alfajorcitos">Alfajorcitos <button>Agregar al carrito</button></td>
-                <td><img src="../images/heart-cake.PNG" alt="torta heart-cake">Heart Cake <button>Agregar al carrito</button></td>
-            </tr>
-    
-        </table>
+        <div class="container text-center">
+            <div class="row d-flex justify-content-evenly gap-4">
+                <article class="d-flex row justify-content-around col-5 product">
+                    <img src="../images/chocotorta.PNG" alt="chocotorta" >
+                    <h3>Chocotorta</h3> 
+                    <button>Agregar al carrito</button>
+                </article>
+                        
+                <article class="d-flex row justify-content-around col-5 product">
+                    <img src="../images/alfajorcitos.PNG" alt="alfajorcitos"> 
+                    <h3>Alfajorcitos</h3>
+                    <button>Agregar al carrito</button>
+                </article>
+
+                <article class="d-flex row justify-content-around col-5 product">
+                    <img src="../images/heart-cake.PNG" alt="torta heart-cake">
+                    <h3>Heart Cake</h3>
+                    <button>Agregar al carrito</button>
+                </article>                    
+            </div>
+        </div>
         
     
     </section>
     
     <section>
-        <h2>Todos los productos</h2>
+        <h2 class= "text-center py-2">Todos los productos</h2>
         
         <form>
             <h3>Ordenar Por</h3>
@@ -96,40 +109,56 @@
                 <option value="precioAlto">Precio mas alto</option>
             </select>
         </form>
-        <table>
-            <tr>
-                <td><img src="../images/desayuno-cumple.PNG" alt="caja con seleccion de productos de desayuno">Desayuno Cumpleaños <button class="shopButton">Agregar al carrito</button></td>
-                <td><img src="../images/torta-brownie.PNG" alt="torta Brownie">Torta Brownie <button>Agregar al carrito</button></td>
-                <td><img src="../images/torta-tofi.PNG" alt="torta Tofi">Torta Tofi <button>Agregar al carrito</button></td>
-            </tr>
-    
-        </table>
+        <div class="container text-center">
+            <div class="row d-flex justify-content-evenly gap-4 mb-4">
+
+                <aside class="col-2 d-flex flex-column align-items-left">
+                    <h3>Filtros</h3>
+            
+                    <form class="d-flex flex-column align-items-left">
+                        <div>Desayunos</div>
+                        <input type="checkbox" name="desayunos" value="desayunos">
+            
+                        <div>Alfajores</div>
+                        <input type="checkbox" name="alfajores" value="alfajores">
+            
+                        <div>Tortas</div>
+                        <input type="checkbox" name="tortas" value="tortas">
+            
+                        <div>Salados</div>
+                        <input type="checkbox" name="salados" value="salados">
+                    </form>
+                </aside>
+            
+
+                <article class="d-flex row justify-content-around col-5 product">
+                    <img src="../images/desayuno-cumple.PNG" alt="caja con seleccion de productos de desayuno">
+                    <h3>Desayuno</h3>
+                    <button>Agregar al carrito</button>
+                </article>
+
+                <article class="d-flex row justify-content-around col-5 product">
+                    <img src="../images/torta-brownie.PNG" alt="torta Brownie">
+                    <h3>Torta Brownie</h3>
+                    <button>Agregar al carrito</button>
+                </article>
+                    
+                <article class="d-flex row justify-content-around col-5 product">
+                    <img src="../images/torta-tofi.PNG" alt="torta Tofi">
+                    <h3>Torta Tofi</h3>
+                    <button>Agregar al carrito</button>
+                </article>
+            </div>
+        </div>  
 
         <button class="mostrarMas">Mostrar mas</button>
 
     </section>
 
-    <aside>
-        <h3>Filtros</h3>
-
-        <form>
-            <div>Desayunos</div>
-            <input type="checkbox" name="desayunos" value="desayunos">
-
-            <div>Alfajores</div>
-            <input type="checkbox" name="alfajores" value="alfajores">
-
-            <div>Tortas</div>
-            <input type="checkbox" name="tortas" value="tortas">
-
-            <div>Salados</div>
-            <input type="checkbox" name="salados" value="salados">
-        </form>
-    </aside>
-
+    
 
     <footer>
-        <nav class="container text-left bg-light p-3 m-0">            
+        <nav class="container-fluid text-left bg-light p-3 m-0">            
             <nav class="row d-flex justify-content-start align-items-left">
                 <nav class="navContacto col-3">
 

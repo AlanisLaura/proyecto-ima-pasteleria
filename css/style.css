@@ -11,8 +11,11 @@ html {
 }
 
 ul,
-ol {
+li {
     list-style: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
 }
 
 a{ 
@@ -60,6 +63,9 @@ h3{
     border: 3px;
 }
 */
+.input-buscador{
+    width: 50vh;
+}
 .carrito { 
     
     height: 7%;
@@ -94,6 +100,9 @@ button:hover{
     color: white;
 } */
 
+.map{
+    object-fit: contain;
+}
 /* Formato footers */
 
 /* .footer{
